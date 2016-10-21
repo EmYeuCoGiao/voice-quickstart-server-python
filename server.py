@@ -5,8 +5,8 @@ from twilio.rest import Client
 import twilio.twiml
 
 ACCOUNT_SID = 'ACdcb15bfe1e711eac9da03336cd3be34d'
-API_KEY = 'SKe9edd9767a6b49543191b95346b5c856'
-API_KEY_SECRET = 'PmixIEd7wHUQMk80E4QKRpT9xV0cetKn'
+API_KEY = 'SK8666c56c82c0fbfc30d92a1f98d1c8a0'
+API_KEY_SECRET = '6rodh4ortTChuhESEEzAJZhGS8cpZ0wa'
 PUSH_CREDENTIAL_SID = 'CRca5ffaef2c70b969fd21ec638ac00890'
 APP_SID = 'AP216d8428e3545f8ff10f5f06ccf58576'
 
