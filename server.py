@@ -3,6 +3,7 @@ from flask import Flask, request
 from twilio.jwt.access_token import AccessToken, VoiceGrant
 from twilio.rest import Client
 import twilio.twiml
+import logging;
 
 ACCOUNT_SID = 'ACdcb15bfe1e711eac9da03336cd3be34d'
 API_KEY = 'SK8666c56c82c0fbfc30d92a1f98d1c8a0'
@@ -52,7 +53,7 @@ def placeCall():
   account_sid = os.environ.get("ACCOUNT_SID", ACCOUNT_SID)
   api_key = os.environ.get("API_KEY", API_KEY)
   api_key_secret = os.environ.get("API_KEY_SECRET", API_KEY_SECRET)
-
+  logging.info(account_sid);
   client = Client(api_key, api_key_secret, account_sid)
   call = client.calls.create(url=request.url_root + 'incoming', to='client:' + IDENTITY, from_='client:' + CALLER_ID)
   return str(call.sid)
